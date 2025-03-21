@@ -1,0 +1,91 @@
+# 服务配置
+[pool]
+# 应用服务端口
+port = 8080
+# IP验证超时时间(秒)
+verifyTime = 1800
+
+# 中国国内代理源
+[[platform]]
+name = "89代理"
+method = "GET"
+urls = [
+  "https://www.89ip.cn/index_1.html",
+  "https://www.89ip.cn/index_2.html",
+  "https://www.89ip.cn/index_3.html",
+  "https://www.89ip.cn/index_4.html",
+]
+proxy = false
+
+[[platform]]
+name = "快代理"
+method = "GET"
+urls = [
+  "http://www.ip3366.net/?stype=1&page=1",
+  "http://www.ip3366.net/?stype=1&page=2",
+  "http://www.ip3366.net/?stype=3&page=1",
+  "http://www.ip3366.net/?stype=3&page=2"
+]
+proxy = false
+
+[[platform]]
+name = "Free Proxy List"
+method = "GET"
+urls = [
+  "https://free-proxy-list.net"
+]
+proxy = false
+
+[[platform]]
+name = "my代理"
+method = "GET"
+urls = [
+  "https://www.my-proxy.com/free-socks-5-proxy.html",
+  "https://www.my-proxy.com/free-elite-proxy.html",
+  "https://www.my-proxy.com/free-anonymous-proxy.html"
+]
+proxy = false
+
+[[platform]]
+name = "scrape代理"
+method = "GET"
+urls = [
+  "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=CN&ssl=all&anonymity"
+  
+]
+proxy = false
+
+[[platform]]
+name = "github"
+method = "GET"
+urls = [
+  "https://raw.githubusercontent.com/parserpp/ip_ports/main/proxyinfo.json"
+]
+proxy = false
+
+[[platform]]
+name = "db代理"
+method = "GET"
+urls = [
+  "http://proxydb.net/?protocol=http&country=CN",
+  "http://proxydb.net/?protocol=https&country=CN",
+  "http://proxydb.net/?protocol=socks5&country=CN"
+
+]
+proxy = false
+
+[[platform]]
+name = "自由代理"
+method = "GET"
+urls = [
+  "https://www.freeproxylists.net/zh/?c=CN&u=50&page=1"
+]
+proxy = false
+
+[[platform]]
+name = "命运代理"
+method = "GET"
+urls = [
+  "http://proxylist.fatezero.org/proxy.list",
+]
+proxy = false

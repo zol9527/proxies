@@ -1,0 +1,67 @@
+# ---------- 通用配置 ----------
+
+# 日志
+**/log/
+**/logs/
+
+# 测试文件
+**/test/
+
+# 临时文件
+**/tmp/
+**/*.tmp
+
+# 二进制文件
+**/*.o
+**/*.pyc
+**/*.swp
+**/*.class
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+**/*.a
+
+# 压缩文件
+**/*.rar
+**/*.tgz
+**/*.zip
+**/*.7z
+**/*.gz
+**/*.bz
+**/*.xz
+**/*.tar
+**/*.tar.gz
+
+# 输出目录
+**/dist/
+**/build/
+**/out/
+**/target/
+
+# 特殊文件
+**/.DS_Store
+**/.idea/
+**/Thumb.db
+
+# vscode 相关配置
+**/.vscode/
+
+# 数据目录
+**/data*/
+**/archive*/
+
+# ---------- Python 相关 ----------
+# 环境
+**/.venv/
+
+# python 缓存
+**/__pycache__/
+**/.pytest_cache/
+
+# ---------- 前端相关 ----------
+# node_modules
+**/node_modules/
+
+# ---------- 自定义 ----------
+**/.vscode/
